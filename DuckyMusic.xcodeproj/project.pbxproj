@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF7102DF2877E63200583E29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7102DE2877E63200583E29 /* AppDelegate.swift */; };
+		AF7102E12877E63200583E29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7102E02877E63200583E29 /* SceneDelegate.swift */; };
+		AF7102E32877E63200583E29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7102E22877E63200583E29 /* ViewController.swift */; };
+		AF7102E62877E63200583E29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7102E42877E63200583E29 /* Main.storyboard */; };
+		AF7102E82877E63400583E29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF7102E72877E63400583E29 /* Assets.xcassets */; };
+		AF7102EB2877E63400583E29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7102E92877E63400583E29 /* LaunchScreen.storyboard */; };
+		AF7102F62877E63400583E29 /* DuckyMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7102F52877E63400583E29 /* DuckyMusicTests.swift */; };
+		AF7103002877E63400583E29 /* DuckyMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7102FF2877E63400583E29 /* DuckyMusicUITests.swift */; };
+		AF7103022877E63400583E29 /* DuckyMusicUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7103012877E63400583E29 /* DuckyMusicUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF7102F22877E63400583E29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF7102D32877E63200583E29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF7102DA2877E63200583E29;
+			remoteInfo = DuckyMusic;
+		};
+		AF7102FC2877E63400583E29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF7102D32877E63200583E29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF7102DA2877E63200583E29;
+			remoteInfo = DuckyMusic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF7102DB2877E63200583E29 /* DuckyMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuckyMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF7102DE2877E63200583E29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF7102E02877E63200583E29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AF7102E22877E63200583E29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF7102E52877E63200583E29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF7102E72877E63400583E29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF7102EA2877E63400583E29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF7102EC2877E63400583E29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF7102F12877E63400583E29 /* DuckyMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuckyMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF7102F52877E63400583E29 /* DuckyMusicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckyMusicTests.swift; sourceTree = "<group>"; };
+		AF7102FB2877E63400583E29 /* DuckyMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuckyMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF7102FF2877E63400583E29 /* DuckyMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckyMusicUITests.swift; sourceTree = "<group>"; };
+		AF7103012877E63400583E29 /* DuckyMusicUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckyMusicUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF7102D82877E63200583E29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF7102EE2877E63400583E29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF7102F82877E63400583E29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF7102D22877E63200583E29 = {
+			isa = PBXGroup;
+			children = (
+				AF7102DD2877E63200583E29 /* DuckyMusic */,
+				AF7102F42877E63400583E29 /* DuckyMusicTests */,
+				AF7102FE2877E63400583E29 /* DuckyMusicUITests */,
+				AF7102DC2877E63200583E29 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF7102DC2877E63200583E29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF7102DB2877E63200583E29 /* DuckyMusic.app */,
+				AF7102F12877E63400583E29 /* DuckyMusicTests.xctest */,
+				AF7102FB2877E63400583E29 /* DuckyMusicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF7102DD2877E63200583E29 /* DuckyMusic */ = {
+			isa = PBXGroup;
+			children = (
+				AF7102DE2877E63200583E29 /* AppDelegate.swift */,
+				AF7102E02877E63200583E29 /* SceneDelegate.swift */,
+				AF7102E22877E63200583E29 /* ViewController.swift */,
+				AF7102E42877E63200583E29 /* Main.storyboard */,
+				AF7102E72877E63400583E29 /* Assets.xcassets */,
+				AF7102E92877E63400583E29 /* LaunchScreen.storyboard */,
+				AF7102EC2877E63400583E29 /* Info.plist */,
+			);
+			path = DuckyMusic;
+			sourceTree = "<group>";
+		};
+		AF7102F42877E63400583E29 /* DuckyMusicTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF7102F52877E63400583E29 /* DuckyMusicTests.swift */,
+			);
+			path = DuckyMusicTests;
+			sourceTree = "<group>";
+		};
+		AF7102FE2877E63400583E29 /* DuckyMusicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AF7102FF2877E63400583E29 /* DuckyMusicUITests.swift */,
+				AF7103012877E63400583E29 /* DuckyMusicUITestsLaunchTests.swift */,
+			);
+			path = DuckyMusicUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF7102DA2877E63200583E29 /* DuckyMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF7103052877E63400583E29 /* Build configuration list for PBXNativeTarget "DuckyMusic" */;
+			buildPhases = (
+				AF7102D72877E63200583E29 /* Sources */,
+				AF7102D82877E63200583E29 /* Frameworks */,
+				AF7102D92877E63200583E29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DuckyMusic;
+			productName = DuckyMusic;
+			productReference = AF7102DB2877E63200583E29 /* DuckyMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF7102F02877E63400583E29 /* DuckyMusicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF7103082877E63400583E29 /* Build configuration list for PBXNativeTarget "DuckyMusicTests" */;
+			buildPhases = (
+				AF7102ED2877E63400583E29 /* Sources */,
+				AF7102EE2877E63400583E29 /* Frameworks */,
+				AF7102EF2877E63400583E29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF7102F32877E63400583E29 /* PBXTargetDependency */,
+			);
+			name = DuckyMusicTests;
+			productName = DuckyMusicTests;
+			productReference = AF7102F12877E63400583E29 /* DuckyMusicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AF7102FA2877E63400583E29 /* DuckyMusicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF71030B2877E63400583E29 /* Build configuration list for PBXNativeTarget "DuckyMusicUITests" */;
+			buildPhases = (
+				AF7102F72877E63400583E29 /* Sources */,
+				AF7102F82877E63400583E29 /* Frameworks */,
+				AF7102F92877E63400583E29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF7102FD2877E63400583E29 /* PBXTargetDependency */,
+			);
+			name = DuckyMusicUITests;
+			productName = DuckyMusicUITests;
+			productReference = AF7102FB2877E63400583E29 /* DuckyMusicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF7102D32877E63200583E29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					AF7102DA2877E63200583E29 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					AF7102F02877E63400583E29 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = AF7102DA2877E63200583E29;
+					};
+					AF7102FA2877E63400583E29 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = AF7102DA2877E63200583E29;
+					};
+				};
+			};
+			buildConfigurationList = AF7102D62877E63200583E29 /* Build configuration list for PBXProject "DuckyMusic" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF7102D22877E63200583E29;
+			productRefGroup = AF7102DC2877E63200583E29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF7102DA2877E63200583E29 /* DuckyMusic */,
+				AF7102F02877E63400583E29 /* DuckyMusicTests */,
+				AF7102FA2877E63400583E29 /* DuckyMusicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF7102D92877E63200583E29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF7102EB2877E63400583E29 /* LaunchScreen.storyboard in Resources */,
+				AF7102E82877E63400583E29 /* Assets.xcassets in Resources */,
+				AF7102E62877E63200583E29 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF7102EF2877E63400583E29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF7102F92877E63400583E29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF7102D72877E63200583E29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF7102E32877E63200583E29 /* ViewController.swift in Sources */,
+				AF7102DF2877E63200583E29 /* AppDelegate.swift in Sources */,
+				AF7102E12877E63200583E29 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF7102ED2877E63400583E29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF7102F62877E63400583E29 /* DuckyMusicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF7102F72877E63400583E29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF7103002877E63400583E29 /* DuckyMusicUITests.swift in Sources */,
+				AF7103022877E63400583E29 /* DuckyMusicUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF7102F32877E63400583E29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF7102DA2877E63200583E29 /* DuckyMusic */;
+			targetProxy = AF7102F22877E63400583E29 /* PBXContainerItemProxy */;
+		};
+		AF7102FD2877E63400583E29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF7102DA2877E63200583E29 /* DuckyMusic */;
+			targetProxy = AF7102FC2877E63400583E29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF7102E42877E63200583E29 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF7102E52877E63200583E29 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF7102E92877E63400583E29 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF7102EA2877E63400583E29 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF7103032877E63400583E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF7103042877E63400583E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF7103062877E63400583E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DuckyMusic/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ducksern.DuckyMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF7103072877E63400583E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DuckyMusic/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ducksern.DuckyMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AF7103092877E63400583E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ducksern.DuckyMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DuckyMusic.app/DuckyMusic";
+			};
+			name = Debug;
+		};
+		AF71030A2877E63400583E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ducksern.DuckyMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DuckyMusic.app/DuckyMusic";
+			};
+			name = Release;
+		};
+		AF71030C2877E63400583E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ducksern.DuckyMusicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DuckyMusic;
+			};
+			name = Debug;
+		};
+		AF71030D2877E63400583E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ducksern.DuckyMusicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DuckyMusic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF7102D62877E63200583E29 /* Build configuration list for PBXProject "DuckyMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF7103032877E63400583E29 /* Debug */,
+				AF7103042877E63400583E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF7103052877E63400583E29 /* Build configuration list for PBXNativeTarget "DuckyMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF7103062877E63400583E29 /* Debug */,
+				AF7103072877E63400583E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF7103082877E63400583E29 /* Build configuration list for PBXNativeTarget "DuckyMusicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF7103092877E63400583E29 /* Debug */,
+				AF71030A2877E63400583E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF71030B2877E63400583E29 /* Build configuration list for PBXNativeTarget "DuckyMusicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF71030C2877E63400583E29 /* Debug */,
+				AF71030D2877E63400583E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF7102D32877E63200583E29 /* Project object */;
+}
