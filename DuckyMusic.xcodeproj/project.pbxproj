@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		AF7102DF2877E63200583E29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7102DE2877E63200583E29 /* AppDelegate.swift */; };
 		AF7102E12877E63200583E29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7102E02877E63200583E29 /* SceneDelegate.swift */; };
-		AF7102E32877E63200583E29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7102E22877E63200583E29 /* ViewController.swift */; };
-		AF7102E62877E63200583E29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7102E42877E63200583E29 /* Main.storyboard */; };
 		AF7102E82877E63400583E29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF7102E72877E63400583E29 /* Assets.xcassets */; };
 		AF7102EB2877E63400583E29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7102E92877E63400583E29 /* LaunchScreen.storyboard */; };
 		AF7102F62877E63400583E29 /* DuckyMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7102F52877E63400583E29 /* DuckyMusicTests.swift */; };
 		AF7103002877E63400583E29 /* DuckyMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7102FF2877E63400583E29 /* DuckyMusicUITests.swift */; };
 		AF7103022877E63400583E29 /* DuckyMusicUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7103012877E63400583E29 /* DuckyMusicUITestsLaunchTests.swift */; };
+		AF7103102877E6FB00583E29 /* AudioPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF71030E2877E6FB00583E29 /* AudioPlayerViewController.swift */; };
+		AF7103112877E6FB00583E29 /* AudioPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF71030F2877E6FB00583E29 /* AudioPlayerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,6 @@
 		AF7102DB2877E63200583E29 /* DuckyMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuckyMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7102DE2877E63200583E29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF7102E02877E63200583E29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AF7102E22877E63200583E29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AF7102E52877E63200583E29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF7102E72877E63400583E29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF7102EA2877E63400583E29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF7102EC2877E63400583E29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +47,8 @@
 		AF7102FB2877E63400583E29 /* DuckyMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuckyMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7102FF2877E63400583E29 /* DuckyMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckyMusicUITests.swift; sourceTree = "<group>"; };
 		AF7103012877E63400583E29 /* DuckyMusicUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckyMusicUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AF71030E2877E6FB00583E29 /* AudioPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerViewController.swift; sourceTree = "<group>"; };
+		AF71030F2877E6FB00583E29 /* AudioPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioPlayerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +99,9 @@
 		AF7102DD2877E63200583E29 /* DuckyMusic */ = {
 			isa = PBXGroup;
 			children = (
+				AF71031228780DE700583E29 /* Controller */,
 				AF7102DE2877E63200583E29 /* AppDelegate.swift */,
 				AF7102E02877E63200583E29 /* SceneDelegate.swift */,
-				AF7102E22877E63200583E29 /* ViewController.swift */,
-				AF7102E42877E63200583E29 /* Main.storyboard */,
 				AF7102E72877E63400583E29 /* Assets.xcassets */,
 				AF7102E92877E63400583E29 /* LaunchScreen.storyboard */,
 				AF7102EC2877E63400583E29 /* Info.plist */,
@@ -125,6 +124,15 @@
 				AF7103012877E63400583E29 /* DuckyMusicUITestsLaunchTests.swift */,
 			);
 			path = DuckyMusicUITests;
+			sourceTree = "<group>";
+		};
+		AF71031228780DE700583E29 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF71030E2877E6FB00583E29 /* AudioPlayerViewController.swift */,
+				AF71030F2877E6FB00583E29 /* AudioPlayerViewController.xib */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +239,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF7103112877E6FB00583E29 /* AudioPlayerViewController.xib in Resources */,
 				AF7102EB2877E63400583E29 /* LaunchScreen.storyboard in Resources */,
 				AF7102E82877E63400583E29 /* Assets.xcassets in Resources */,
-				AF7102E62877E63200583E29 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF7102E32877E63200583E29 /* ViewController.swift in Sources */,
+				AF7103102877E6FB00583E29 /* AudioPlayerViewController.swift in Sources */,
 				AF7102DF2877E63200583E29 /* AppDelegate.swift in Sources */,
 				AF7102E12877E63200583E29 /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +305,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AF7102E42877E63200583E29 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AF7102E52877E63200583E29 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AF7102E92877E63400583E29 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -441,7 +441,6 @@
 				INFOPLIST_FILE = DuckyMusic/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -468,7 +467,6 @@
 				INFOPLIST_FILE = DuckyMusic/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
