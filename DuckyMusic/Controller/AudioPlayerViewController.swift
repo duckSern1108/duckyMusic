@@ -7,6 +7,7 @@
 
 import UIKit
 import AVFoundation
+import PromiseKit
 
 class AudioPlayerViewController: UIViewController {
     var player:AVPlayer?
@@ -53,6 +54,15 @@ class AudioPlayerViewController: UIViewController {
         durationSlider.value = 0
         player?.volume = 0.5
         maxDurationLabel.text = convertMsToMinuteAndSecond(ms: duration)
+        firstly {
+            AlbumRouter.getNewRelease()
+        }.done {
+            result in
+            print("albums :: ",result)
+        }.catch {
+            err in
+            print(err)
+        }
     }
     
     func convertMsToMinuteAndSecond(ms: Float) -> String {

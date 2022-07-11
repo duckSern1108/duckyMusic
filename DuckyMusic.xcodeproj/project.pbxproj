@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E0EC7B15D326B3A030D8968 /* Pods_DuckyMusic_DuckyMusicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5834547810DC520CD3C52B72 /* Pods_DuckyMusic_DuckyMusicUITests.framework */; };
+		7E47B7A524ADDB903226E036 /* Pods_DuckyMusicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7C95350C87155568E4A672 /* Pods_DuckyMusicTests.framework */; };
+		AF2D9B722878410D009B39A5 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2D9B712878410D009B39A5 /* Album.swift */; };
+		AF2D9B7428784114009B39A5 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2D9B7328784114009B39A5 /* Artist.swift */; };
+		AF3C202F287847C40070D6BD /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3C202E287847C40070D6BD /* BaseRouter.swift */; };
+		AF3C20312878480E0070D6BD /* AlbumRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3C20302878480E0070D6BD /* AlbumRouter.swift */; };
+		AF3C2033287BD1BF0070D6BD /* SpotifyAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3C2032287BD1BF0070D6BD /* SpotifyAuth.swift */; };
 		AF7102DF2877E63200583E29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7102DE2877E63200583E29 /* AppDelegate.swift */; };
 		AF7102E12877E63200583E29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7102E02877E63200583E29 /* SceneDelegate.swift */; };
 		AF7102E82877E63400583E29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF7102E72877E63400583E29 /* Assets.xcassets */; };
@@ -16,6 +23,7 @@
 		AF7103022877E63400583E29 /* DuckyMusicUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7103012877E63400583E29 /* DuckyMusicUITestsLaunchTests.swift */; };
 		AF7103102877E6FB00583E29 /* AudioPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF71030E2877E6FB00583E29 /* AudioPlayerViewController.swift */; };
 		AF7103112877E6FB00583E29 /* AudioPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF71030F2877E6FB00583E29 /* AudioPlayerViewController.xib */; };
+		D54DECFA4C6F2FD0873018F4 /* Pods_DuckyMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3E8AC8B32992FC68DD0A59 /* Pods_DuckyMusic.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0082E0B20F313A5AE856BCF7 /* Pods-DuckyMusic-DuckyMusicUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckyMusic-DuckyMusicUITests.release.xcconfig"; path = "Target Support Files/Pods-DuckyMusic-DuckyMusicUITests/Pods-DuckyMusic-DuckyMusicUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0AED8E0B901C0160CA49AF94 /* Pods-DuckyMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckyMusic.release.xcconfig"; path = "Target Support Files/Pods-DuckyMusic/Pods-DuckyMusic.release.xcconfig"; sourceTree = "<group>"; };
+		2BAA6E788A9FF9C077CD3587 /* Pods-DuckyMusicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckyMusicTests.release.xcconfig"; path = "Target Support Files/Pods-DuckyMusicTests/Pods-DuckyMusicTests.release.xcconfig"; sourceTree = "<group>"; };
+		2E624C886723CFC1E8F059F5 /* Pods-DuckyMusicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckyMusicTests.debug.xcconfig"; path = "Target Support Files/Pods-DuckyMusicTests/Pods-DuckyMusicTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5834547810DC520CD3C52B72 /* Pods_DuckyMusic_DuckyMusicUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DuckyMusic_DuckyMusicUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E902E50E1D03331592D2EFD /* Pods-DuckyMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckyMusic.debug.xcconfig"; path = "Target Support Files/Pods-DuckyMusic/Pods-DuckyMusic.debug.xcconfig"; sourceTree = "<group>"; };
+		9A6EB1F57155E2C3B45AF0BF /* Pods-DuckyMusic-DuckyMusicUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckyMusic-DuckyMusicUITests.debug.xcconfig"; path = "Target Support Files/Pods-DuckyMusic-DuckyMusicUITests/Pods-DuckyMusic-DuckyMusicUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF2D9B712878410D009B39A5 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		AF2D9B7328784114009B39A5 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		AF3C202E287847C40070D6BD /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		AF3C20302878480E0070D6BD /* AlbumRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumRouter.swift; sourceTree = "<group>"; };
+		AF3C2032287BD1BF0070D6BD /* SpotifyAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyAuth.swift; sourceTree = "<group>"; };
 		AF7102DB2877E63200583E29 /* DuckyMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuckyMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7102DE2877E63200583E29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF7102E02877E63200583E29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +69,8 @@
 		AF7103012877E63400583E29 /* DuckyMusicUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckyMusicUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AF71030E2877E6FB00583E29 /* AudioPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerViewController.swift; sourceTree = "<group>"; };
 		AF71030F2877E6FB00583E29 /* AudioPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioPlayerViewController.xib; sourceTree = "<group>"; };
+		EF7C95350C87155568E4A672 /* Pods_DuckyMusicTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DuckyMusicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3E8AC8B32992FC68DD0A59 /* Pods_DuckyMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DuckyMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D54DECFA4C6F2FD0873018F4 /* Pods_DuckyMusic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E47B7A524ADDB903226E036 /* Pods_DuckyMusicTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +94,55 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E0EC7B15D326B3A030D8968 /* Pods_DuckyMusic_DuckyMusicUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75862AC9FAD94F7E223E8E20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA3E8AC8B32992FC68DD0A59 /* Pods_DuckyMusic.framework */,
+				5834547810DC520CD3C52B72 /* Pods_DuckyMusic_DuckyMusicUITests.framework */,
+				EF7C95350C87155568E4A672 /* Pods_DuckyMusicTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		925D1D3E892F063CEFAFF841 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E902E50E1D03331592D2EFD /* Pods-DuckyMusic.debug.xcconfig */,
+				0AED8E0B901C0160CA49AF94 /* Pods-DuckyMusic.release.xcconfig */,
+				9A6EB1F57155E2C3B45AF0BF /* Pods-DuckyMusic-DuckyMusicUITests.debug.xcconfig */,
+				0082E0B20F313A5AE856BCF7 /* Pods-DuckyMusic-DuckyMusicUITests.release.xcconfig */,
+				2E624C886723CFC1E8F059F5 /* Pods-DuckyMusicTests.debug.xcconfig */,
+				2BAA6E788A9FF9C077CD3587 /* Pods-DuckyMusicTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AF2D9B6F287840FC009B39A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF2D9B712878410D009B39A5 /* Album.swift */,
+				AF2D9B7328784114009B39A5 /* Artist.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF2D9B7028784105009B39A5 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				AF3C202E287847C40070D6BD /* BaseRouter.swift */,
+				AF3C20302878480E0070D6BD /* AlbumRouter.swift */,
+				AF3C2032287BD1BF0070D6BD /* SpotifyAuth.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		AF7102D22877E63200583E29 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +150,8 @@
 				AF7102F42877E63400583E29 /* DuckyMusicTests */,
 				AF7102FE2877E63400583E29 /* DuckyMusicUITests */,
 				AF7102DC2877E63200583E29 /* Products */,
+				925D1D3E892F063CEFAFF841 /* Pods */,
+				75862AC9FAD94F7E223E8E20 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +168,8 @@
 		AF7102DD2877E63200583E29 /* DuckyMusic */ = {
 			isa = PBXGroup;
 			children = (
+				AF2D9B7028784105009B39A5 /* Router */,
+				AF2D9B6F287840FC009B39A5 /* Model */,
 				AF71031228780DE700583E29 /* Controller */,
 				AF7102DE2877E63200583E29 /* AppDelegate.swift */,
 				AF7102E02877E63200583E29 /* SceneDelegate.swift */,
@@ -142,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF7103052877E63400583E29 /* Build configuration list for PBXNativeTarget "DuckyMusic" */;
 			buildPhases = (
+				DB8A9B2F9788D2EB45FA00C4 /* [CP] Check Pods Manifest.lock */,
 				AF7102D72877E63200583E29 /* Sources */,
 				AF7102D82877E63200583E29 /* Frameworks */,
 				AF7102D92877E63200583E29 /* Resources */,
+				FCF10083F759FD193210C529 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -159,6 +232,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF7103082877E63400583E29 /* Build configuration list for PBXNativeTarget "DuckyMusicTests" */;
 			buildPhases = (
+				DA8F25337BC4CD82B305338D /* [CP] Check Pods Manifest.lock */,
 				AF7102ED2877E63400583E29 /* Sources */,
 				AF7102EE2877E63400583E29 /* Frameworks */,
 				AF7102EF2877E63400583E29 /* Resources */,
@@ -177,9 +251,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF71030B2877E63400583E29 /* Build configuration list for PBXNativeTarget "DuckyMusicUITests" */;
 			buildPhases = (
+				E42945CEB2DE70419B306B8B /* [CP] Check Pods Manifest.lock */,
 				AF7102F72877E63400583E29 /* Sources */,
 				AF7102F82877E63400583E29 /* Frameworks */,
 				AF7102F92877E63400583E29 /* Resources */,
+				571E6FAD52523F095D1424CF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,14 +337,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		571E6FAD52523F095D1424CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DuckyMusic-DuckyMusicUITests/Pods-DuckyMusic-DuckyMusicUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DuckyMusic-DuckyMusicUITests/Pods-DuckyMusic-DuckyMusicUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DuckyMusic-DuckyMusicUITests/Pods-DuckyMusic-DuckyMusicUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA8F25337BC4CD82B305338D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DuckyMusicTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB8A9B2F9788D2EB45FA00C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DuckyMusic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E42945CEB2DE70419B306B8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DuckyMusic-DuckyMusicUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCF10083F759FD193210C529 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DuckyMusic/Pods-DuckyMusic-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DuckyMusic/Pods-DuckyMusic-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DuckyMusic/Pods-DuckyMusic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AF7102D72877E63200583E29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AF7103102877E6FB00583E29 /* AudioPlayerViewController.swift in Sources */,
+				AF3C202F287847C40070D6BD /* BaseRouter.swift in Sources */,
 				AF7102DF2877E63200583E29 /* AppDelegate.swift in Sources */,
 				AF7102E12877E63200583E29 /* SceneDelegate.swift in Sources */,
+				AF3C2033287BD1BF0070D6BD /* SpotifyAuth.swift in Sources */,
+				AF3C20312878480E0070D6BD /* AlbumRouter.swift in Sources */,
+				AF2D9B7428784114009B39A5 /* Artist.swift in Sources */,
+				AF2D9B722878410D009B39A5 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +616,7 @@
 		};
 		AF7103062877E63400583E29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E902E50E1D03331592D2EFD /* Pods-DuckyMusic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -458,6 +643,7 @@
 		};
 		AF7103072877E63400583E29 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AED8E0B901C0160CA49AF94 /* Pods-DuckyMusic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -484,6 +670,7 @@
 		};
 		AF7103092877E63400583E29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E624C886723CFC1E8F059F5 /* Pods-DuckyMusicTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -503,6 +690,7 @@
 		};
 		AF71030A2877E63400583E29 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BAA6E788A9FF9C077CD3587 /* Pods-DuckyMusicTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -522,6 +710,7 @@
 		};
 		AF71030C2877E63400583E29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A6EB1F57155E2C3B45AF0BF /* Pods-DuckyMusic-DuckyMusicUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +728,7 @@
 		};
 		AF71030D2877E63400583E29 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0082E0B20F313A5AE856BCF7 /* Pods-DuckyMusic-DuckyMusicUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
