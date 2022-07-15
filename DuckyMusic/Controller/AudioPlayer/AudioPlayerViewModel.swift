@@ -59,9 +59,7 @@ class AudioPlayerViewModel {
     }
     
     func startPlay() {
-        if (trackIndex ==  nil) {
-            trackIndex = 0
-        }
+        trackIndex = 0
     }
     
     func nextTrack() -> Bool {
