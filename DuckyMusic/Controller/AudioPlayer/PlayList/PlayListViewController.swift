@@ -22,7 +22,18 @@ class PlayListViewController: UIViewController {
     weak var delegate:PlayListDelegate?
     weak var dataSource:PlayListDataSource?
     @IBOutlet weak var tableview: UITableView!
+    
     var didLoad = false
+    
+    var isPlayingAudio = false {
+        didSet {
+            guard let currentPlayingIndexPath = currentPlayingIndexPath, didLoad == true else {
+                return
+            }
+            tableview.reloadRows(at: [currentPlayingIndexPath], with: .fade)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let cell = UINib(nibName: "TrackCell", bundle: .main)
@@ -67,7 +78,12 @@ extension PlayListViewController:UITableViewDataSource {
         trackCell.durationLabel.text = cellData.durationText
         trackCell.trackNumberLabel.text = "\(cellData.trackNumber)."
         if (indexPath.row == currentPlayingIndexPath?.row && cellData.playable == true) {
-            trackCell.startPlay()
+            if (isPlayingAudio) {
+                trackCell.startPlay()
+            } else {
+                trackCell.pause()
+            }
+            
         } else {
             trackCell.stopPlay()
         }

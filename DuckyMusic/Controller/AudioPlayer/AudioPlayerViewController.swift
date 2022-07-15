@@ -108,12 +108,14 @@ class AudioPlayerViewController: UIViewController {
         updateSliderTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateDurationSlider), userInfo: nil, repeats: true)
         player?.play()
         playBtn.setImage(UIImage(systemName: "pause.fill"), for: .normal)
+        viewModel.isPlayingAudio = true
     }
     
     func pauseAudio() {
         updateSliderTimer?.invalidate()
         player?.pause()
         playBtn.setImage(UIImage(systemName: "play.fill"), for: .normal)
+        viewModel.isPlayingAudio = false
     }
     
     func initAudioPlayer(from urlStr: String) {
@@ -207,8 +209,7 @@ class AudioPlayerViewController: UIViewController {
             durationLabel.text = Double(durationSlider.value).convertMsToMinuteAndSecond()
             return
         }
-        player?.pause()
-        updateSliderTimer?.invalidate()
+        pauseAudio()
         if (canReplay) {
             replayTrack()
         } else {
@@ -247,8 +248,7 @@ extension AudioPlayerViewController:AudioPlayerViewModelDelegate {
             pauseAudio()   
             return
         }
-        player?.pause()
-        updateSliderTimer?.invalidate()
+        pauseAudio()
         durationSlider.maximumValue = Float(newTrack.duration)
         maxDurationLabel.text = newTrack.durationText
         trackNameLabel.text = newTrack.name

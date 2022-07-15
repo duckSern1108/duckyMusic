@@ -40,6 +40,15 @@ class TrackCell: UITableViewCell {
         indicator.state = .stopped
     }
     
+    func pause() {
+        indicator.state = .playing
+        trackNumberLabel.isHidden = true
+        stackView.removeArrangedSubview(trackNumberLabel)
+        stackView.insertArrangedSubview(indicator, at: 0)
+        indicator.isHidden = false
+        indicator.state = .paused
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         

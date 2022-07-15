@@ -18,7 +18,7 @@ class AudioPlayerViewModel {
     var playRamdomTrack = false
     
     var albumData: Album!
-    var playlistVC: PlayListViewController?
+    weak var playlistVC: PlayListViewController?
     weak var delegate:AudioPlayerViewModelDelegate?
     
     var trackIndex: Int? {
@@ -32,6 +32,11 @@ class AudioPlayerViewModel {
             if (!playedTrackIndex.contains(trackIndex)) {
                 playedTrackIndex.append(trackIndex)
             }
+        }
+    }
+    var isPlayingAudio = false {
+        didSet {
+            playlistVC?.isPlayingAudio = isPlayingAudio
         }
     }
     
