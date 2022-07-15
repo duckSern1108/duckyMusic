@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.6.1)
+  - ESTMusicIndicator (0.2.0)
   - ObjectMapper (3.5.3)
   - PromiseKit (6.17.1):
     - PromiseKit/CorePromise (= 6.17.1)
@@ -10,23 +11,32 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (6.17.1):
     - PromiseKit/CorePromise
+  - SDWebImage (5.13.0):
+    - SDWebImage/Core (= 5.13.0)
+  - SDWebImage/Core (5.13.0)
 
 DEPENDENCIES:
   - Alamofire
+  - ESTMusicIndicator
   - ObjectMapper (~> 3.5)
   - PromiseKit (~> 6.8)
+  - SDWebImage (~> 5.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - ESTMusicIndicator
     - ObjectMapper
     - PromiseKit
+    - SDWebImage
 
 SPEC CHECKSUMS:
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  ESTMusicIndicator: 80a123b51a7de3caa44dc91829b9619185dad0f6
   ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
   PromiseKit: ee485df3d4dc570594d7e7aecae6352697dc6a4c
+  SDWebImage: 0327043dbb9533e75f2eff8445b3df0f2ceca6ac
 
-PODFILE CHECKSUM: 435d9bfb237dbd4efd05feb1c677a83b828a72a9
+PODFILE CHECKSUM: acc08576cc4839adf245168193dd4218333d1ae0
 
 COCOAPODS: 1.11.3

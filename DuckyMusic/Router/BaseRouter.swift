@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 import ObjectMapper
 
-typealias RequestParam = [String:String]
+typealias RequestParam = [String:Int]
 
 enum Router: URLRequestConvertible {
     case get(String,RequestParam?), post(String,RequestParam?)
@@ -45,7 +45,6 @@ enum Router: URLRequestConvertible {
             request = self.generateURLRequest(p: path)
             request = try JSONParameterEncoder().encode(parameters, into: request)
         }
-        print(SpotifyAuth.shared.authorToken)
         
         request.headers = [
             .authorization(SpotifyAuth.shared.authorToken)
@@ -55,7 +54,16 @@ enum Router: URLRequestConvertible {
     }
 }
 
-
+class UnauthorResponse:Mappable {
+    var errCode: Int?
+    
+    required init?(map: Map) {
+        
+    }
+    func mapping(map: Map) {
+        errCode <- map["error.status"]
+    }
+}
 
 
 class ApiMain {
@@ -65,15 +73,31 @@ class ApiMain {
         
     }
     
-    func request(path: String = "", method: HTTPMethod, completion:@escaping (AFDataResponse<String>) -> Void) {
-        SpotifyAuth.shared.getToken {
-            switch method {
-            case .get:
-                AF.request(Router.get(path,nil)).responseString(completionHandler: completion)
-            default:
-                break
+    func request(path: String = "", method: HTTPMethod, param: RequestParam?, completion:@escaping (AFDataResponse<String>) -> Void) {
+        switch method {
+        case .get:
+            AF.request(Router.get(path,param)).responseString { result in
+                switch result.result {
+                case .success(let data):                    
+                    if let unauthRes = Mapper<UnauthorResponse>().map(JSONString: data) {
+                        if (unauthRes.errCode == 401 || unauthRes.errCode == 400) {
+                            SpotifyAuth.shared.getToken { [weak self] in
+                                self?.request(path: path, method: method, param: param, completion: completion)
+                            }
+                            return
+                        }
+                        
+                    }
+                    break
+                default:
+                    break
+                }
+                completion(result)
             }
+        default:
+            break
         }
+        
     }
     
 }

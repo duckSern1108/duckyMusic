@@ -35,12 +35,23 @@ class Album:Mappable {
         images <- map["images"]
         artists <- map["artists"]
         releaseDate <- map["release_date"]
+        totalTracks <- map["total_tracks"]
+        tracks <- map["tracks.items"]
+        staticTracks <- map["tracks.items"]
     }
-    
+    var staticTracks: [Track] = []
     var id:String = ""
     var images: [Image] = []
     var name:String = ""
     var type:String = ""
     var releaseDate:String = ""
     var artists: [Artist] = []
+    var totalTracks = 0
+    var label = ""
+    var tracks: [Track] = []
+    var artistLabel:String {
+        artists.map {
+            $0.name
+        }.joined(separator: ", ")
+    }
 }
