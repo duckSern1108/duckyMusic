@@ -51,8 +51,8 @@ class AudioPlayerViewController: UIViewController {
         
         trackImage.sd_setImage(with: URL(string: viewModel.albumData.images[0].url))
         trackImage.translatesAutoresizingMaskIntoConstraints = false
-        trackImage.widthAnchor.constraint(equalToConstant: view.frame.width - 40 * 2).isActive = true
-        trackImage.heightAnchor.constraint(equalToConstant: view.frame.width - 40 * 2).isActive = true
+        trackImage.widthAnchor.constraint(equalToConstant: view.frame.width / 2).isActive = true
+        trackImage.heightAnchor.constraint(equalToConstant: view.frame.width / 2).isActive = true
         
         randomButton.tintColor = .gray
         refreshButton.tintColor = .gray
