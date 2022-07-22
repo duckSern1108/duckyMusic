@@ -74,9 +74,7 @@ extension PlayListViewController:UITableViewDataSource {
         guard let cellData = dataSource?.trackAtIndex(at: indexPath) else {
             return trackCell
         }
-        trackCell.trackNameLabel.text = cellData.name
-        trackCell.durationLabel.text = cellData.durationText
-        trackCell.trackNumberLabel.text = "\(cellData.trackNumber)."
+        trackCell.bindData(cellData: cellData)
         if (indexPath.row == currentPlayingIndexPath?.row && cellData.playable == true) {
             if (isPlayingAudio) {
                 trackCell.startPlay()

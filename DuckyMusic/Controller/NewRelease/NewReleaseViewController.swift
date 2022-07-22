@@ -70,15 +70,7 @@ extension NewReleaseViewController:UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cellData = albumList[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! AlbumCellCollectionViewCell
-        cell.nameLabel.text = cellData.name
-        let artistStr = cellData.artists.map {
-            $0.name
-        }.joined(separator: ", ") + " \(cellData.totalTracks) songs"
-        cell.artistLabel.text = artistStr
-        cell.image.sd_setImage(with: URL(string: cellData.images[1].url))
-        
-        cell.image.widthAnchor.constraint(equalToConstant: (screenWidth - 16) / 2).isActive = true
-        cell.image.heightAnchor.constraint(equalToConstant: (screenWidth - 16) / 2).isActive = true
+        cell.bindData(cellData: cellData)
         return cell
         
     }

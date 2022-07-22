@@ -15,6 +15,7 @@ class TrackCell: UITableViewCell {
     @IBOutlet weak var durationLabel: UILabel!
     @IBOutlet weak var trackNameLabel: UILabel!
     var indicator:ESTMusicIndicatorView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -47,6 +48,12 @@ class TrackCell: UITableViewCell {
         stackView.insertArrangedSubview(indicator, at: 0)
         indicator.isHidden = false
         indicator.state = .paused
+    }
+    
+    func bindData(cellData: Track) {
+        trackNameLabel.text = cellData.name
+        durationLabel.text = cellData.durationText
+        trackNumberLabel.text = "\(cellData.trackNumber)."
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
