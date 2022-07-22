@@ -10,21 +10,6 @@ import Alamofire
 import ObjectMapper
 import Security
 
-class AuthRespons:Mappable {
-    var token = ""
-    var type = ""
-    var expiresIn:Double = 0
-    required init?(map: Map) {
-        
-    }
-    func mapping(map: Map) {
-        token <- map["access_token"]
-        type <- map["token_type"]
-        expiresIn <- map["expires_in"]
-    }
-    
-}
-
 class SpotifyAuth {
     var token = ""
     var expirationTime: Double?

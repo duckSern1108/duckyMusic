@@ -18,6 +18,9 @@
 		AF3C2037287BD5BA0070D6BD /* NewReleaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF3C2035287BD5BA0070D6BD /* NewReleaseViewController.xib */; };
 		AF3C203A287BD6570070D6BD /* AlbumCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3C2038287BD6570070D6BD /* AlbumCellCollectionViewCell.swift */; };
 		AF3C203B287BD6570070D6BD /* AlbumCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF3C2039287BD6570070D6BD /* AlbumCellCollectionViewCell.xib */; };
+		AF3FFE03288ABE2C0060E94A /* SpotifyAuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3FFE02288ABE2C0060E94A /* SpotifyAuthModel.swift */; };
+		AF3FFE05288ABE770060E94A /* AlbumRouterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3FFE04288ABE770060E94A /* AlbumRouterModel.swift */; };
+		AF3FFE07288ABEDD0060E94A /* BaseRouterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3FFE06288ABEDD0060E94A /* BaseRouterModel.swift */; };
 		AF7102DF2877E63200583E29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7102DE2877E63200583E29 /* AppDelegate.swift */; };
 		AF7102E12877E63200583E29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7102E02877E63200583E29 /* SceneDelegate.swift */; };
 		AF7102E82877E63400583E29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF7102E72877E63400583E29 /* Assets.xcassets */; };
@@ -75,6 +78,9 @@
 		AF3C2035287BD5BA0070D6BD /* NewReleaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewReleaseViewController.xib; sourceTree = "<group>"; };
 		AF3C2038287BD6570070D6BD /* AlbumCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		AF3C2039287BD6570070D6BD /* AlbumCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumCellCollectionViewCell.xib; sourceTree = "<group>"; };
+		AF3FFE02288ABE2C0060E94A /* SpotifyAuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyAuthModel.swift; sourceTree = "<group>"; };
+		AF3FFE04288ABE770060E94A /* AlbumRouterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumRouterModel.swift; sourceTree = "<group>"; };
+		AF3FFE06288ABEDD0060E94A /* BaseRouterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouterModel.swift; sourceTree = "<group>"; };
 		AF7102DB2877E63200583E29 /* DuckyMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuckyMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7102DE2877E63200583E29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF7102E02877E63200583E29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +163,7 @@
 		AF2D9B6F287840FC009B39A5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AF3FFE01288ABDFD0060E94A /* ApiResponse */,
 				AF2D9B712878410D009B39A5 /* Album.swift */,
 				AF2D9B7328784114009B39A5 /* Artist.swift */,
 				AFF93374287C04E6002A45A2 /* Track.swift */,
@@ -183,6 +190,16 @@
 				AF3C2039287BD6570070D6BD /* AlbumCellCollectionViewCell.xib */,
 			);
 			path = NewRelease;
+			sourceTree = "<group>";
+		};
+		AF3FFE01288ABDFD0060E94A /* ApiResponse */ = {
+			isa = PBXGroup;
+			children = (
+				AF3FFE02288ABE2C0060E94A /* SpotifyAuthModel.swift */,
+				AF3FFE04288ABE770060E94A /* AlbumRouterModel.swift */,
+				AF3FFE06288ABEDD0060E94A /* BaseRouterModel.swift */,
+			);
+			path = ApiResponse;
 			sourceTree = "<group>";
 		};
 		AF7102D22877E63200583E29 = {
@@ -551,9 +568,12 @@
 				AF7102DF2877E63200583E29 /* AppDelegate.swift in Sources */,
 				AFF93381287E84C5002A45A2 /* Double.ext.swift in Sources */,
 				AF7102E12877E63200583E29 /* SceneDelegate.swift in Sources */,
+				AF3FFE05288ABE770060E94A /* AlbumRouterModel.swift in Sources */,
 				AFF93373287C0289002A45A2 /* MainCoordinator.swift in Sources */,
 				AF3C2033287BD1BF0070D6BD /* SpotifyAuth.swift in Sources */,
+				AF3FFE03288ABE2C0060E94A /* SpotifyAuthModel.swift in Sources */,
 				AFF9337D287E6EA3002A45A2 /* TrackCell.swift in Sources */,
+				AF3FFE07288ABEDD0060E94A /* BaseRouterModel.swift in Sources */,
 				AFF9338A287EB5E5002A45A2 /* ViewController.ext.swift in Sources */,
 				AF3C2036287BD5BA0070D6BD /* NewReleaseViewController.swift in Sources */,
 				AF3C20312878480E0070D6BD /* AlbumRouter.swift in Sources */,

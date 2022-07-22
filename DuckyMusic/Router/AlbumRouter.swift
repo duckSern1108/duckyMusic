@@ -9,16 +9,6 @@ import Foundation
 import PromiseKit
 import ObjectMapper
 
-class NewReleaseResponse: Mappable {
-    var albums: [Album] = []
-    required init?(map: Map) {
-        
-    }
-    func mapping(map: Map) {
-        albums <- map["albums.items"]
-    }
-}
-
 class AlbumRouter {
     
     static let shared = AlbumRouter()

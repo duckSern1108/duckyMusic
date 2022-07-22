@@ -54,18 +54,6 @@ enum Router: URLRequestConvertible {
     }
 }
 
-class UnauthorResponse:Mappable {
-    var errCode: Int?
-    
-    required init?(map: Map) {
-        
-    }
-    func mapping(map: Map) {
-        errCode <- map["error.status"]
-    }
-}
-
-
 class ApiMain {
     static let shared = ApiMain()
     
@@ -80,6 +68,8 @@ class ApiMain {
                 switch result.result {
                 case .success(let data):                    
                     if let unauthRes = Mapper<UnauthorResponse>().map(JSONString: data) {
+                        //401 la token het han
+                        //400 la ko co token type
                         if (unauthRes.errCode == 401 || unauthRes.errCode == 400) {
                             SpotifyAuth.shared.getToken { [weak self] in
                                 self?.request(path: path, method: method, param: param, completion: completion)
