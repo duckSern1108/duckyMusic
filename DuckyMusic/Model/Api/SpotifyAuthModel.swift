@@ -24,3 +24,7 @@ struct AuthRespons:Mappable {
     }
     
 }
+
+struct AuthParam: Encodable {
+    let grant_type = "client_credentials"
+}

@@ -21,6 +21,8 @@
 		AF3FFE03288ABE2C0060E94A /* SpotifyAuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3FFE02288ABE2C0060E94A /* SpotifyAuthModel.swift */; };
 		AF3FFE05288ABE770060E94A /* AlbumRouterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3FFE04288ABE770060E94A /* AlbumRouterModel.swift */; };
 		AF3FFE07288ABEDD0060E94A /* BaseRouterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3FFE06288ABEDD0060E94A /* BaseRouterModel.swift */; };
+		AF3FFE0A288ABF780060E94A /* KeyChainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3FFE09288ABF780060E94A /* KeyChainService.swift */; };
+		AF3FFE0C288AC0570060E94A /* UserDefaultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3FFE0B288AC0570060E94A /* UserDefaultService.swift */; };
 		AF7102DF2877E63200583E29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7102DE2877E63200583E29 /* AppDelegate.swift */; };
 		AF7102E12877E63200583E29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7102E02877E63200583E29 /* SceneDelegate.swift */; };
 		AF7102E82877E63400583E29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF7102E72877E63400583E29 /* Assets.xcassets */; };
@@ -81,6 +83,8 @@
 		AF3FFE02288ABE2C0060E94A /* SpotifyAuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyAuthModel.swift; sourceTree = "<group>"; };
 		AF3FFE04288ABE770060E94A /* AlbumRouterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumRouterModel.swift; sourceTree = "<group>"; };
 		AF3FFE06288ABEDD0060E94A /* BaseRouterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouterModel.swift; sourceTree = "<group>"; };
+		AF3FFE09288ABF780060E94A /* KeyChainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainService.swift; sourceTree = "<group>"; };
+		AF3FFE0B288AC0570060E94A /* UserDefaultService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultService.swift; sourceTree = "<group>"; };
 		AF7102DB2877E63200583E29 /* DuckyMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuckyMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7102DE2877E63200583E29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF7102E02877E63200583E29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -163,7 +167,7 @@
 		AF2D9B6F287840FC009B39A5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AF3FFE01288ABDFD0060E94A /* ApiResponse */,
+				AF3FFE01288ABDFD0060E94A /* Api */,
 				AF2D9B712878410D009B39A5 /* Album.swift */,
 				AF2D9B7328784114009B39A5 /* Artist.swift */,
 				AFF93374287C04E6002A45A2 /* Track.swift */,
@@ -192,14 +196,23 @@
 			path = NewRelease;
 			sourceTree = "<group>";
 		};
-		AF3FFE01288ABDFD0060E94A /* ApiResponse */ = {
+		AF3FFE01288ABDFD0060E94A /* Api */ = {
 			isa = PBXGroup;
 			children = (
 				AF3FFE02288ABE2C0060E94A /* SpotifyAuthModel.swift */,
 				AF3FFE04288ABE770060E94A /* AlbumRouterModel.swift */,
 				AF3FFE06288ABEDD0060E94A /* BaseRouterModel.swift */,
 			);
-			path = ApiResponse;
+			path = Api;
+			sourceTree = "<group>";
+		};
+		AF3FFE08288ABF600060E94A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AF3FFE09288ABF780060E94A /* KeyChainService.swift */,
+				AF3FFE0B288AC0570060E94A /* UserDefaultService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		AF7102D22877E63200583E29 = {
@@ -227,6 +240,7 @@
 		AF7102DD2877E63200583E29 /* DuckyMusic */ = {
 			isa = PBXGroup;
 			children = (
+				AF3FFE08288ABF600060E94A /* Service */,
 				AFF9337F287E84B8002A45A2 /* Extension */,
 				AFF93371287C026D002A45A2 /* Coordinator */,
 				AF2D9B7028784105009B39A5 /* Router */,
@@ -564,9 +578,11 @@
 				AF3C203A287BD6570070D6BD /* AlbumCellCollectionViewCell.swift in Sources */,
 				AFF93387287EB53C002A45A2 /* LoadingViewController.swift in Sources */,
 				AF7103102877E6FB00583E29 /* AudioPlayerViewController.swift in Sources */,
+				AF3FFE0C288AC0570060E94A /* UserDefaultService.swift in Sources */,
 				AF3C202F287847C40070D6BD /* BaseRouter.swift in Sources */,
 				AF7102DF2877E63200583E29 /* AppDelegate.swift in Sources */,
 				AFF93381287E84C5002A45A2 /* Double.ext.swift in Sources */,
+				AF3FFE0A288ABF780060E94A /* KeyChainService.swift in Sources */,
 				AF7102E12877E63200583E29 /* SceneDelegate.swift in Sources */,
 				AF3FFE05288ABE770060E94A /* AlbumRouterModel.swift in Sources */,
 				AFF93373287C0289002A45A2 /* MainCoordinator.swift in Sources */,
