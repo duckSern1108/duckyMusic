@@ -16,6 +16,13 @@ protocol PlayListDelegate: AnyObject {
 protocol PlayListDataSource:AnyObject {
     func numberOfTrack() -> Int
     func trackAtIndex(at: IndexPath) -> Track
+    func currentPlayTrackIndexPath() -> IndexPath?
+    func isAudioPlayerRunning() -> Bool
+}
+
+protocol PlayListCommand: AnyObject {
+    func onCurrentPlayingIndexChange(currentValue: Int?,oldValue: Int?)
+    func onAudioStateChange(currentValue: Bool)
 }
 
 class PlayListViewController: UIViewController {
@@ -24,15 +31,6 @@ class PlayListViewController: UIViewController {
     @IBOutlet weak var tableview: UITableView!
     
     var didLoad = false
-    
-    var isPlayingAudio = false {
-        didSet {
-            guard let currentPlayingIndexPath = currentPlayingIndexPath, didLoad == true else {
-                return
-            }
-            tableview.reloadRows(at: [currentPlayingIndexPath], with: .fade)
-        }
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,24 +46,6 @@ class PlayListViewController: UIViewController {
     @objc func onReloadAlbumData() {
         delegate?.onReloadAlbumData(self)
     }
-    
-    
-    var currentPlayingIndexPath:IndexPath? {
-        didSet {
-            guard let currentPlayingIndexPath = currentPlayingIndexPath, didLoad == true else {
-                return
-            }
-            tableview.beginUpdates()
-            if (oldValue != nil && oldValue != currentPlayingIndexPath) {
-                tableview.reloadRows(at: [currentPlayingIndexPath,oldValue!], with: .fade)
-            } else {
-                tableview.reloadRows(at: [currentPlayingIndexPath], with: .fade)
-            }
-            tableview.endUpdates()
-        }
-    }
-    
-    
 }
 
 extension PlayListViewController:UITableViewDataSource {
@@ -74,9 +54,11 @@ extension PlayListViewController:UITableViewDataSource {
         guard let cellData = dataSource?.trackAtIndex(at: indexPath) else {
             return trackCell
         }
+        let currentPlayingIndexPath = dataSource?.currentPlayTrackIndexPath()
+        let isPlayingAudio = dataSource?.isAudioPlayerRunning()
         trackCell.bindData(cellData: cellData)
         if (indexPath.row == currentPlayingIndexPath?.row && cellData.playable == true) {
-            if (isPlayingAudio) {
+            if (isPlayingAudio != nil && isPlayingAudio! == true) {
                 trackCell.startPlay()
             } else {
                 trackCell.pause()
@@ -128,5 +110,28 @@ extension PlayListViewController:UITableViewDelegate {
         play.image = UIImage(systemName: "play.fill")?.withTintColor(.white)
         let swipe = UISwipeActionsConfiguration(actions: [play])
         return swipe
+    }
+}
+
+extension PlayListViewController:PlayListCommand {
+    func onCurrentPlayingIndexChange(currentValue: Int?,oldValue: Int?) {
+        guard let currentValue = currentValue, didLoad == true else {
+            return
+        }
+        tableview.beginUpdates()
+        let currentIndexPath = IndexPath(row: currentValue, section: 0)
+        if (oldValue != nil && oldValue != currentValue) {
+            tableview.reloadRows(at: [currentIndexPath,IndexPath(row: oldValue!, section: 0)], with: .fade)
+        } else {
+            tableview.reloadRows(at: [currentIndexPath], with: .fade)
+        }
+        tableview.endUpdates()
+    }
+    
+    func onAudioStateChange(currentValue: Bool) {
+        guard let currentPlayingIndexPath = dataSource?.currentPlayTrackIndexPath(), didLoad == true else {
+            return
+        }
+        tableview.reloadRows(at: [currentPlayingIndexPath], with: .fade)
     }
 }

@@ -35,8 +35,8 @@ class MainCoordinator {
         playlistVC.dataSource = audioVM
         playlistVC.delegate = audioVM
         audioVM.playlistVC = playlistVC
-        playlistVC.currentPlayingIndexPath = currentPlayTrack
-        playlistVC.isPlayingAudio = audioVM.isPlayingAudio
+        playlistVC.onAudioStateChange(currentValue: audioVM.isPlayingAudio)
+        playlistVC.onCurrentPlayingIndexChange(currentValue: audioVM.trackIndex, oldValue: nil)
         navigationController.pushViewController(playlistVC, animated: true)        
     }
 }

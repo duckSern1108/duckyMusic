@@ -18,13 +18,13 @@ class AudioPlayerViewModel {
     var playRamdomTrack = false
     
     var albumData: Album!
-    weak var playlistVC: PlayListViewController?
+    weak var playlistVC: PlayListCommand?
     weak var delegate:AudioPlayerViewModelDelegate?
     
     var trackIndex: Int? {
         didSet {
             delegate?.onCurrentPlayTrackChange(self)
-            playlistVC?.currentPlayingIndexPath =  currentTrackIndexPath
+            playlistVC?.onCurrentPlayingIndexChange(currentValue: trackIndex, oldValue: oldValue)
             guard let trackIndex = trackIndex else {
                 
                 return
@@ -36,7 +36,7 @@ class AudioPlayerViewModel {
     }
     var isPlayingAudio = false {
         didSet {
-            playlistVC?.isPlayingAudio = isPlayingAudio
+            playlistVC?.onAudioStateChange(currentValue: isPlayingAudio)
         }
     }
     
@@ -142,10 +142,18 @@ extension AudioPlayerViewModel:PlayListDelegate {
 }
 
 extension AudioPlayerViewModel:PlayListDataSource {
+    func isAudioPlayerRunning() -> Bool {
+        isPlayingAudio
+    }
+    
     func numberOfTrack() -> Int {
         albumData.tracks.count
     }
     func trackAtIndex(at indexPath: IndexPath) -> Track {
         albumData.tracks[indexPath.row]
     }
+    func currentPlayTrackIndexPath() -> IndexPath? {
+        currentTrackIndexPath
+    }
+    
 }
